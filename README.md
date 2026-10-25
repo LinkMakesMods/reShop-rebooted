@@ -1,0 +1,61 @@
+# reShop
+A Nintendo 3DS eShop remake built with libctru.
+
+
+
+[Check our website!](https://unitendo.org/reShop)
+
+
+[Join our Discord!](https://discord.unitendo.org/)
+
+
+[![](https://dcbadge.limes.pink/api/server/dCSgz7KERv)](https://discord.unitendo.org/)
+
+<img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue">
+
+
+> [!NOTE]
+> This project has been cancelled.
+> Use at everyone's risk.
+> Thank you.
+
+## v1 Checklist
+- [x] License
+- [x] Basic framework 
+- [x] Basic rendering
+- [x] Streamed Audio (Using @VirtuallyExisting's custom implementation)
+- [x] httpc downloading based off of devkitpro's example
+- [x] CIA Installation from SD Card
+- [x] Grabbing listings, descriptions, and icons off of a server
+- [x] Downloading and Installing apps
+- [x] Downloading Animation
+- [x] Closed Beta
+- [x] Complete GUI
+- [x] eShop-ify the entire interface (make it look as similar as possible)
+- [x] Open Beta
+
+## v2 Checklist
+- [ ] Messaging (like Juxt communities but realtime) under each app listing
+- [ ] A user rating system
+- [ ] Download DS apps as well (not just DSiWare!)
+- [ ] Fake Currency (not needed to get homebrew, more like an achievement system. you can get different ranks on a leaderboard, etc.)
+- [ ] Upgraded Music Options (integrates with the currency)
+- [ ] Closed Beta
+- [ ] Implement friending users (friends list and in-app)
+- [ ] Suggest users who play similar games as you
+- [ ] Add downloading from other sources
+- [ ] Open Beta
+
+
+## How to compile
+You'll need devkitPro and a few dependencies. To install the latter, run:
+```bash
+sudo dkp-pacman -S 3ds-dev 3ds-opusfile 3ds-curl 3ds-mbedtls 3ds-zlib 3ds-bzip2 3ds-liblzma
+```
+Depending on your platform, you may not need sudo or dkp-.
+Then, run the following commands:
+```bash
+git clone https://github.com/Unitendo/reShop/
+cd reShop
+make
+```

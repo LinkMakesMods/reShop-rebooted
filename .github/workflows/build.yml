@@ -1,0 +1,29 @@
+name: Build reShop
+
+on:
+  push:
+    branches: [ "main" ]
+    paths:
+      - 'source/**'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - 'source/**'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: devkitpro/devkitarm:latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+
+      - name: Build 3dsx
+        run: |
+          make
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: reShop 3dsx
+          path: ./reShop.3dsx
