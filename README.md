@@ -1,20 +1,20 @@
-# reShop
+<p align="center">
+  <img src="assets/banner.svg" alt="reShop: a Nintendo 3DS homebrew eShop remake" width="100%">
+</p>
 
-**A Nintendo 3DS eShop remake for homebrew, built with libctru.**
-
-[Discord](https://discord.gg/hqhRR2RCnd)
-
-[![Discord](https://dcbadge.limes.pink/api/server/hqhRR2RCnd)](https://discord.gg/hqhRR2RCnd)
-<img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue">
+<p align="center">
+  <a href="https://discord.gg/hqhRR2RCnd"><img alt="Discord" src="https://dcbadge.limes.pink/api/server/hqhRR2RCnd"></a>
+  <img alt="gitleaks badge" src="https://img.shields.io/badge/protected%20by-gitleaks-blue">
+  <img alt="License: PolyForm Noncommercial" src="https://img.shields.io/badge/license-PolyForm%20Noncommercial-orange">
+</p>
 
 > [!NOTE]
-> reShop is back! This project was previously cancelled and is now being rebooted.
-> Originally created by [Unitendo](https://github.com/Unitendo). Rebooted by LinkMakesMods.
+> reShop is back! This project was previously cancelled and is now being rebooted with permission from Unitendo, the original owner.
 > The codebase is under active development, so expect rough edges and breaking changes.
 
 ## What is reShop?
 
-reShop is a community-driven storefront for 3DS homebrew that looks and feels like the original Nintendo eShop. Browse listings, read descriptions, view icons, and download and install apps straight to your console, all from a familiar interface.
+reShop is a storefront for 3DS homebrew that looks and feels like the original Nintendo eShop. Browse listings, read descriptions, view icons, and download and install apps straight to your console, all from a familiar interface.
 
 ## Features
 
@@ -25,7 +25,7 @@ reShop is a community-driven storefront for 3DS homebrew that looks and feels li
 
 ## Roadmap
 
-### Phase 1: Foundation (carried over from v1)
+### Phase 1: Foundation (from the original reShop)
 - [x] Licensing, base framework, and rendering
 - [x] Streamed audio (custom implementation by @VirtuallyExisting)
 - [x] HTTP downloading, based on devkitPro's example
@@ -64,16 +64,18 @@ Depending on your platform, you may not need `sudo` or the `dkp-` prefix.
 
 ### Compile
 ```bash
-git clone https://github.com/Unitendo/reShop/
+git clone https://github.com/LinkMakesMods/reShop/
 cd reShop
 make
 ```
 
 ## Contributing
 
-Contributions are welcome! Join the [Discord](https://discord.gg/hqhRR2RCnd) to chat, report bugs, or discuss ideas before opening a pull request.
+Contributions are welcome! Join the [Discord](https://discord.gg/hqhRR2RCnd) to chat, report bugs, or discuss ideas before opening a pull request. By contributing, you agree that your changes are released under the same license as the project.
 
 ## Credits
+
+![reShop credits](assets/permission.png)
 
 - **[Unitendo](https://github.com/Unitendo)**: original reShop project, including the base framework, rendering, downloading, installation, and eShop-style interface
 - **LinkMakesMods**: reboot and all changes since
@@ -82,4 +84,10 @@ Contributions are welcome! Join the [Discord](https://discord.gg/hqhRR2RCnd) to 
 
 ## License
 
-[Add license here]
+reShop is licensed under the [PolyForm Noncommercial License 1.0.0](License.md). You're free to use, modify, and share it for personal and other noncommercial purposes. Commercial use is not permitted.
+
+Portions of this project are based on the original reShop by Unitendo.
+
+## Disclaimer
+
+reShop is a fan-made homebrew project. It is not affiliated with, endorsed by, or sponsored by Nintendo. Nintendo, Nintendo 3DS, and Nintendo eShop are trademarks of Nintendo.
